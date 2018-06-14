@@ -23,8 +23,8 @@
       </div>
     </a>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto container">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
           {% for item in site.menu %}
             {% if page.url == item.url %}
             {% assign is_current = "active" %}
@@ -39,7 +39,7 @@
             </li>
           {% endfor %}
         </ul>
-      </div>
+      <div>
     </nav>
     <main class="container">
       {{ content }}
