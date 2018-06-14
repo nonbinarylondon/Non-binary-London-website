@@ -1,0 +1,9 @@
+title: Non-binary London
+menu:
+  - text: Home
+    url: /
+  - text: Events
+    url: /events/
+  - text: Contact
+    url: /contact/
+permalink: pretty

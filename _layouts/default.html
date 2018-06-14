@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css"/>
+    {% if page.title %}
+      <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
+  </head>
+  <body>
+    <a href = "/">
+      <div id="logo-wrapper">
+        <img id="flag" src="/assets/flag.png"/>
+        <div id="central">
+          <img id="logo" src="/assets/logo.png"/>
+        </div>
+      </div>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          {% for item in site.menu %}
+            {% if page.url == item.url %}
+            {% assign is_current = "active" %}
+            {% else %}
+            {% assign is_current = "" %}
+            {% endif %}
+            <li class="nav-item {{ is_current }}">
+              <a class="nav-link" href="{{ item.url }}">
+                {{ item.text }}
+                {% if page.url == item.url %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+    {{ content }}
+  </body>
+</html>
