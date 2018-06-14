@@ -2,13 +2,36 @@
 title: "Contact"
 layout: default
 ---
+<p class="before-list">You have three options for getting in contact:</p>
+<ul>
+  <li>directly via email to <a href="mailto:nonbinarylondon@gmail.com?subject=nonbinary.london contact">nonbinarylondon@gmail.com</a>;</li>
+  <li>via the form below - clicking submit will briefly redirect you to another site for reCAPTCHA to verify you're human;</li>
+  <li>via Facebook chat with one of the moderators of the Facebook group (<a href="https://www.facebook.com/groups/nonbinarylondon/members" target="_blank">visible here</a>).</li>
+</ul>
 
-<p>You can use the contact form below or send us an email direct from your email client/app.</p>
-
-<p>To do the latter, use one of these links to email us about the respective topic - <a href="mailto:nonbinarylondon@gmail.com?subject=nonbinary.london contact: events">events</a> | <a href="mailto:nonbinarylondon@gmail.com?subject=nonbinary.london contact: mailing list">mailing list</a> | <a href="mailto:nonbinarylondon@gmail.com?subject=nonbinary.london contact: Facebook group">Facebook group</a> | <a href="mailto:nonbinarylondon@gmail.com?subject=nonbinary.london contact: website">website</a> - or for any other topic email <a href="mailto:nonbinarylondon@gmail.com?subject=nonbinary.london contact">nonbinarylondon@gmail.com</a>.</p>
-
-<p>You can also get in touch with any of the moderators of the Facebook group (<a href="https://www.facebook.com/groups/nonbinarylondon/members" target="_blank">visible here</a>) via Facebook chat.</p>
-
-<div class="typeform-widget" data-url="https://yndajas.typeform.com/to/wVaQja" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 400px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=wVaQja&utm_source=typeform.com-12225296-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+<div class="container">
+  <form action="https://formspree.io/nonbinarylondon@gmail.com" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="Name" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="Email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject:</label>
+      <input type="text" class="form-control" id="subject" name="Subject" placeholder="Enter subject">
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea type="text" class="form-control" id="subject" name="Message" placeholder="Enter message"></textarea>
+    </div>
+    <input type="hidden" name="_subject" value="nonbinary.london contact" />
+    <input type="hidden" name="_cc" value="yndajas@gmail.com" />
+    <input type="hidden" name="_next" value="/message-submitted" />
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
 
 <!-- this page's title is enclosed in quotation marks, whereas events' title was not - does it matter? I can't see any difference in the result -->
