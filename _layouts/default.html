@@ -20,9 +20,9 @@
         </div>
       </div>
     </a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+        <ul class="navbar-nav">
           {% for item in site.menu %}
             {% if page.url == item.url %}
             {% assign is_current = "active" %}
@@ -39,8 +39,10 @@
         </ul>
       </div>
     </nav>
+    <main role="main" class="container">
     {{ content }}
-    <footer>
+    </main>
+    <footer class="container">
       <hr>
       <p>© Non-binary London <script>document.write(new Date().getFullYear());</script></p>
     </footer>
