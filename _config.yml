@@ -11,3 +11,5 @@ menu:
   - text: Contact
     url: /contact/
 permalink: pretty
+url: https://nonbinary.london
+enforce_ssl: nonbinary.london
