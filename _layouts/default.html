@@ -22,7 +22,7 @@
     </a>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto container">
           {% for item in site.menu %}
             {% if page.url == item.url %}
             {% assign is_current = "active" %}
@@ -39,10 +39,14 @@
         </ul>
       </div>
     </nav>
-    {{ content }}
+    <main class="container">
+      {{ content }}
+    </main>
     <footer>
       <hr>
-      <p>© Non-binary London <script>document.write(new Date().getFullYear());</script></p>
+      <div class="container">
+        <p>© Non-binary London <script>document.write(new Date().getFullYear());</script></p>
+      </div>
     </footer>
   </body>
 </html>
