@@ -2,6 +2,8 @@ title: Non-binary London
 menu:
   - text: Home
     url: /
+  - text: About
+    url: /about/
   - text: Events
     url: /events/
   - text: Contact
