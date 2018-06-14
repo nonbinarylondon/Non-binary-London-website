@@ -10,6 +10,8 @@
     {% else %}
       <title>{{ site.title }}</title>
     {% endif %}
+
+    {% include sharing.html %}
   </head>
   <body>
     <a href = "/">
@@ -20,9 +22,15 @@
         </div>
       </div>
     </a>
+<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
         <ul class="navbar-nav">
+=======
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
+>>>>>>> 780af8939eeb51d66c15d6380b1335f58b067455
           {% for item in site.menu %}
             {% if page.url == item.url %}
             {% assign is_current = "active" %}
@@ -37,14 +45,23 @@
             </li>
           {% endfor %}
         </ul>
-      </div>
+      <div>
     </nav>
+<<<<<<< HEAD
     <main role="main" class="container">
     {{ content }}
     </main>
     <footer class="container">
+=======
+    <main class="container">
+      {{ content }}
+    </main>
+    <footer>
+>>>>>>> 780af8939eeb51d66c15d6380b1335f58b067455
       <hr>
-      <p>© Non-binary London <script>document.write(new Date().getFullYear());</script></p>
+      <div class="container">
+        <p>© Non-binary London <script>document.write(new Date().getFullYear());</script></p>
+      </div>
     </footer>
   </body>
 </html>
