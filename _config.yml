@@ -8,6 +8,8 @@ menu:
     url: /about/
   - text: Events
     url: /events/
+  - text: Mailing list
+    url: /mailing-list/
   - text: Contact
     url: /contact/
 permalink: pretty
