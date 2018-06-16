@@ -55,6 +55,20 @@ nav {
   .centered {
     margin: 0 auto;
   }
+
+  li {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  ul.navbar-nav {
+      -webkit-columns: 3;
+      -moz-columns: 3;
+      columns: 3;
+      list-style-position: inside;
+      display: block;
+  }
 }
 
 .footer {
