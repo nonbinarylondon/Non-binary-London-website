@@ -24,24 +24,22 @@
         </div>
       </div>
     </a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-        <ul class="navbar-nav">
-          {% for item in site.menu %}
-            {% if page.url == item.url %}
-            {% assign is_current = "active" %}
-            {% else %}
-            {% assign is_current = "" %}
-            {% endif %}
-            <li class="nav-item {{ is_current }}">
-              <a class="nav-link" href="{{ item.url }}">
-                {{ item.text }}
-                {% if page.url == item.url %}<span class="sr-only">(current)</span>{% endif %}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      <div>
+    <nav class="navbar navbar-expand navbar-light bg-light rounded">
+      <ul class="navbar-nav centered">
+        {% for item in site.menu %}
+          {% if page.url == item.url %}
+          {% assign is_current = "active" %}
+          {% else %}
+          {% assign is_current = "" %}
+          {% endif %}
+          <li class="nav-item {{ is_current }}">
+            <a class="nav-link" href="{{ item.url }}">
+              {{ item.text }}
+              {% if page.url == item.url %}<span class="sr-only">(current)</span>{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </nav>
     <main role="main" class="container">
     {{ content }}
