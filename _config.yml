@@ -17,3 +17,5 @@ menu:
 permalink: pretty
 url: https://nonbinary.london
 enforce_ssl: nonbinary.london
+plugins:
+  - "jekyll-sitemap"
