@@ -6,7 +6,7 @@ The website of [Non-Binary London](https://www.facebook.com/groups/nonbinarylond
 
 Suggestions, questions, bug reports and pull requests are more than welcome.
 
-You can get in contact by [opening an issue](https://github.com/nonbinarylondon/Non-binary-London-website/issues/new) or, if you'd rather not register on GitHub, you can email us at [nonbinarylondon@gmail.com](mailto:nonbinarylondon@gmail.com?subject=nonbinary.london website).
+You can get in contact by [opening an issue](https://github.com/nonbinarylondon/Non-binary-London-website/issues/new) or, if you'd rather not register on GitHub, you can email us at [nonbinarylondon@gmail.com](mailto:nonbinarylondon@gmail.com?subject=nonbinary.london%20website).
 
 To make changes to the site you can edit files directly on GitHub or install Jekyll and run the website locally.
 
