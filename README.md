@@ -1,4 +1,4 @@
-# Non-binary-London-website
+# Non-binary London website
 
 The website of [Non-Binary London](https://www.facebook.com/groups/nonbinarylondon/).
 
